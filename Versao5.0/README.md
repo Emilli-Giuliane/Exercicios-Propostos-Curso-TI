@@ -1,4 +1,4 @@
-#Versão 5.0 - (Comandos: while)
+# Versão 5.0 - (Comandos: while)
 <ul>
     <li>Objetivo: Adicionar repetição para manter o sistema em funcionamento até que o usuário deseje sair. 0 - SAIR.</li>
     <li>Tarefas:
