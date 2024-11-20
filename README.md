@@ -1,10 +1,10 @@
-#Descrição
+# Descrição
 Esse exercício foi proposto pelo professor Márcio do meu curso técnico de Informática da instituição Nova Faculdade.
 
-##Explicação do exercício
+## Explicação do exercício
 Este exercício é para exercitar os conceitos aprendidos em sala de aula. 
 
-##Versões
+## Versões
 <ul>
     <li>Versão 1.0 - (Comandos utilizados: print, input, “””  “””)</li>
     <li>Versão 2.0 - ( Comandos utilizados: print, input, “”” “””, if )</li>
@@ -15,5 +15,5 @@ Este exercício é para exercitar os conceitos aprendidos em sala de aula.
     <li>Versão 7.0 - (Comandos: listas)</li>
 </ul>
 
-##Linguagem utilizada
+## Linguagem utilizada
 Python
