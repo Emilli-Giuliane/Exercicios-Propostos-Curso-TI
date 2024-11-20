@@ -1,4 +1,4 @@
-#Versão 2.0 - ( Comandos utilizados: print, input, “”” “””, if )
+# Versão 2.0 - ( Comandos utilizados: print, input, “”” “””, if )
 <ul>
     <li><b>Objetivo:</b> 
     Acrescentar funcionalidade de somente permitir acesso do usuário previamente cadastrado <b><u>(ex.: marcio, senha: 1234)</u></b>.</li>
