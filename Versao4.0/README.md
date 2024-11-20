@@ -1,4 +1,4 @@
-#Versão 4.0 -  (while, if, elif, else, utilizar um contador(chances = 3), print, input)
+# Versão 4.0 -  (while, if, elif, else, utilizar um contador(chances = 3), print, input)
 <ul>
     <li>Objetivo:</li>
     <ul>
