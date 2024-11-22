@@ -30,8 +30,7 @@ O que deseja fazer?
 
 0 - Sair
 1 - Cadastrar Cliente
-2 -  Criar Conta de Cliente
-3 - Entrar no Menu do Cliente
+2 - Criar Conta de Cliente
 """))
 
     if menuResposta == 1:
@@ -52,15 +51,12 @@ Favor preencher com os seguintes dados requiridos >>>
             novaSenhaCliente = int(input("Digite uma senha com números inteiros: "))
             conferirNovaSenhaCliente = int(input("Digite sua senha novamente: "))
             if novaSenhaCliente == conferirNovaSenhaCliente:
-                print("Senha guardada com sucesso! Entrando no menu do Cliente. . .")
+                print("Senha guardada com sucesso! Te levaremos ao menu do cliente. Aguarde. . .")
                 break
             else:
                 print("Senhas não correspondem, tente criar uma senha novamente.")
         else:
             print("É necessário possuir um cadastro do Cliente para criar a conta no banco.")
-    elif menuResposta == 3:
-        print("Te levaremos ao menu do cliente. Aguarde. . .")
-        break        
     elif menuResposta == 0:
         print("Saindo do sistema. . .")
         exit(0)
@@ -69,9 +65,11 @@ Favor preencher com os seguintes dados requiridos >>>
         print("Opção não existe, por favor escolha entre as opções existentes.")
 
 # Variaveis
-saldo = 0
-sacar = 0
-depositar = 0
+saldo = 0.0
+sacar = 0.0
+depositar = 0.0
+historicoSacar = []
+historicoDepositar = []
 
 # Menu de Saque e depósito do cliente
 while True:
@@ -83,7 +81,8 @@ Bem-vindo {nome}, é um prazer atendê-lo. Como podemos te ajudar hoje?
 1 - Verificar Saldo
 2 - Sacar
 3 - Depositar
-    """)) # posso colocar "Sacar e Depositar" juntos(Saque/Depósito)
+4 - Ver histórico
+    """))
     if MenuClienteResposta == 0:
         print("Fechando o sistema. . .")
         exit(0)
@@ -91,10 +90,18 @@ Bem-vindo {nome}, é um prazer atendê-lo. Como podemos te ajudar hoje?
         print("Seu saldo é de: R$",saldo)
     elif MenuClienteResposta == 2:
         sacar = float(input("Infome o valor que deseja sacar: "))
-        if saldo > sacar:
+        if saldo >= sacar:
             saldo = saldo - sacar
+            historicoSacar.append(sacar)
         else:
             print("Você não pode sacar um valor mais alto que seu saldo.")
     elif MenuClienteResposta == 3:
         depositar = float(input("Informe o valor a ser depositado: "))
         saldo = depositar + saldo
+        historicoDepositar.append(depositar)
+    elif MenuClienteResposta == 4:
+        print("Seu histórico de saques: ",historicoSacar)
+        print("Seu histórico de depósitos: ",historicoDepositar)
+    else:
+        print("")
+        print("Opção não existe, por favor escolha entre as opções existentes.")
